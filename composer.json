@@ -1,0 +1,16 @@
+{
+    "name": "dmitry785/php-framework",
+    "autoload": {
+        "psr-4": {
+            "Dmitry785\\PhpFramework\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dmitry785"
+        }
+    ],
+    "require": {
+        "lukaszzychal/env-loader": "^1.1"
+    }
+}

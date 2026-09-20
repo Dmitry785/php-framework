@@ -1,0 +1,73 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "2e8ef3704911bde15f704d00296415eb",
+    "packages": [
+        {
+            "name": "lukaszzychal/env-loader",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lukaszzychal/env-loader-php.git",
+                "reference": "d10595d2fadc607724d33861c1772e449e8b221d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lukaszzychal/env-loader-php/zipball/d10595d2fadc607724d33861c1772e449e8b221d",
+                "reference": "d10595d2fadc607724d33861c1772e449e8b221d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^1.10",
+                "phpunit/phpunit": "^10.0",
+                "squizlabs/php_codesniffer": "^3.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LukaszZychal\\EnvLoader\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lukasz Zychal",
+                    "email": "lukasz.zychal.dev@gmail.com",
+                    "homepage": "https://github.com/lukaszzychal",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple and lightweight .env file loader utility for PHP",
+            "keywords": [
+                "configuration",
+                "dotenv",
+                "env",
+                "environment",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/lukaszzychal/env-loader-php/issues",
+                "source": "https://github.com/lukaszzychal/env-loader-php/tree/v1.1.0"
+            },
+            "time": "2025-10-15T09:29:44+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {},
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {},
+    "platform-dev": {},
+    "plugin-api-version": "2.9.0"
+}
