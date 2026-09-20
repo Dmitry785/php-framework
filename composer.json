@@ -2,7 +2,7 @@
     "name": "dmitry785/php-framework",
     "autoload": {
         "psr-4": {
-            "Dmitry785\\PhpFramework\\": "src/"
+            "App\\": "src/"
         }
     },
     "authors": [
