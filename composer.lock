@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2e8ef3704911bde15f704d00296415eb",
+    "content-hash": "a00640794c2b2259fce54fe14670682d",
     "packages": [
         {
             "name": "lukaszzychal/env-loader",
@@ -58,16 +58,19 @@
                 "issues": "https://github.com/lukaszzychal/env-loader-php/issues",
                 "source": "https://github.com/lukaszzychal/env-loader-php/tree/v1.1.0"
             },
-            "time": "2025-10-15T09:29:44+00:00"
+            "time": "2025-10-15T09:29:44+00:00",
+            "published-time": "2025-10-15T09:08:54+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": {},
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
-    "platform": {},
+    "platform": {
+        "php": ">=8.2"
+    },
     "platform-dev": {},
-    "plugin-api-version": "2.9.0"
+    "plugin-api-version": "2.11.0"
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\ORM;
+namespace Framework\ORM;
 
 use InvalidArgumentException;
 use PDO;

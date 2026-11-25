@@ -1,5 +1,17 @@
 {
-    "name": "dmitry785/php-framework",
+    "name": "dmitry785/php-service",
+    "description": "the service that using local-installed php-framework",
+	"type": "project",
+	"repositories": [
+		{
+			"type": "path",
+			"url": "./packages/php-framework"
+		}
+	],
+	"require": {
+		"php": ">=8.2",
+        "lukaszzychal/env-loader": "^1.1"
+    },
     "autoload": {
         "psr-4": {
             "App\\": "src/"
@@ -10,7 +22,6 @@
             "name": "Dmitry785"
         }
     ],
-    "require": {
-        "lukaszzychal/env-loader": "^1.1"
-    }
+	"minimum-stability": "dev",
+	"prefer-stable": true
 }

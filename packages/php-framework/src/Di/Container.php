@@ -1,8 +1,7 @@
 <?php
 
-namespace App\Di;
+namespace Framework\Di;
 
-use ClosedGeneratorException;
 use ReflectionClass;
 use RuntimeException;
 
