@@ -20,6 +20,12 @@ class Response{
         array_merge($headers, ["Content-Type"=> 
         "application/json; charset=UTF-8"]));
     }
+    public static function html(string $html, 
+    int $status = 200, array $headers = []): self{
+        return new self($html, $status, 
+        array_merge($headers, ["Content-Type"=> 
+        "text/html; charset=UTF-8"]));
+    }
     public function send(): void{
         http_response_code($this->status);
         foreach($this->headers as $key => $value){

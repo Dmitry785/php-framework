@@ -4,23 +4,30 @@ namespace App\Presentation\Controllers;
 
 use App\Application\UserService;
 use App\Domain\User;
+use App\Presentation\ViewRenderer;
 use Framework\Routing\Attributes\Route;
 use Framework\Routing\Request;
 use Framework\Routing\Response;
 
 class UserController{
     public function __construct(
-        private UserService $userService
+        private UserService $userService,
+        private ViewRenderer $viewRenderer
     ){
 
     }
-    #[Route("/users")]
+    #[Route("/")]
     public function index(): Response{
+        return Response::html($this->viewRenderer->render("User/index", 
+            ["users" => $this->userService->getAll()]));
+    }
+    #[Route("/users")]
+    public function getAll(): Response{
         return Response::json($this->userService->getAll());
     }
     #[Route("/users/{id}")]
     public function getUser(int $id) : Response {
-        return Response::json($this->userService->getById($id));
+        return Response::json($this->userService->findById($id));
     }
     #[Route("/users", "POST")]
     public function store(Request $request) : Response {

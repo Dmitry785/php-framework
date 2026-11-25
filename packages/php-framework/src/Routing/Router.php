@@ -8,6 +8,8 @@ use Reflection;
 use ReflectionClass;
 use ReflectionMethod;
 use RuntimeException;
+use Uri\InvalidUriException;
+use Uri\UriException;
 
 class Router{
     private array $endpoints = [];
@@ -28,7 +30,7 @@ class Router{
                 return $this->performControllerAction($controllerClass, $action, $request);
             }
         }
-        throw new RuntimeException("No route for this request");
+        throw new UriException("No route for this request");
     }
     public function controller(string $controllerClass): void{
         $reflection = new ReflectionClass($controllerClass);
@@ -41,7 +43,6 @@ class Router{
             $matcher = $this->matcherFactory->createMatcher($route->path, $route->method);
             $this->endpoints[] = [$matcher, $controllerClass, $method->getName()];
         }
-        // echo print_r($this->endpoints, true);
     }
     public function performControllerAction(string $controllerClass, string $action, Request $request): mixed{
         $reflection = new ReflectionClass($controllerClass);
