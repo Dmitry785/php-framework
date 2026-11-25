@@ -8,7 +8,7 @@ use Override;
 
 class UserRepository implements UserRepositoryInterface{
     #[Override()]
-    public function findAll(): array{
+    public function getAll(): array{
         return User::query()->toList();
     }
     #[Override()]
