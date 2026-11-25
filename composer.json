@@ -10,7 +10,8 @@
 	],
 	"require": {
 		"php": ">=8.2",
-        "lukaszzychal/env-loader": "^1.1"
+        "lukaszzychal/env-loader": "^1.1",
+        "dmitry785/php-framework": "@dev"
     },
     "autoload": {
         "psr-4": {

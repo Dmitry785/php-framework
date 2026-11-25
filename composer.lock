@@ -4,8 +4,32 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a00640794c2b2259fce54fe14670682d",
+    "content-hash": "d284a5c5b6ee47f0572e430fa9afbb05",
     "packages": [
+        {
+            "name": "dmitry785/php-framework",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "./packages/php-framework",
+                "reference": "1c42b774cee238093c977ceaba115c289ae541b1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Framework\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Dmitry785"
+                }
+            ],
+            "description": "The framework library",
+            "transport-options": {
+                "relative": true
+            }
+        },
         {
             "name": "lukaszzychal/env-loader",
             "version": "v1.1.0",
@@ -65,7 +89,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {},
+    "stability-flags": {
+        "dmitry785/php-framework": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
